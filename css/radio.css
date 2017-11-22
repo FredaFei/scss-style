@@ -1,0 +1,36 @@
+label {
+  cursor: pointer; }
+  label .radioinput,
+  label .checkinput {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%; }
+  label .checkinput {
+    border-radius: 0; }
+  label input[type=radio]:checked + .radioinput:after,
+  label input[type=checkbox]:checked + .checkinput:after {
+    display: inline-block;
+    vertical-align: top;
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+    border-radius: 50%;
+    background: #9ad;
+    transition: all .15s ease; }
+  label input[type=checkbox]:checked + .checkinput:after {
+    border-radius: 0; }
+
+.checkbox {
+  border: 1px solid #ddd;
+  padding: 10px; }
+
+input[type=radio],
+input[type=checkbox] {
+  opacity: 0;
+  display: none; }
