@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>normal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+
+        .wrap {
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 5;
+            line-height: 40px;
+            background: #ffe4c4;
+        }
+
+        main {
+            position: absolute;
+            top: 40px;
+            bottom: 40px;
+            width: 100%;
+            z-index: 10;
+            overflow: auto;
+            background-color: #ccc;
+        }
+
+        .box {
+            margin: 30px;
+            width: 260px;
+            height: 300px;
+            border: 1px solid #dadada;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 15;
+            line-height: 40px;
+            background: #ffc0cb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+    <header class="fixed-top">header</header>
+    <main>
+        <div class="content">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div>
+    </main>
+    <footer>footer</footer>
+
+</div>
+
+
+</body>
+</html>
